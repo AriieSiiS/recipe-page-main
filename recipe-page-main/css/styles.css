@@ -1,0 +1,118 @@
+/* Styles for Recipe Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+  /*   Primary Colors */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  /*   Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--eggshell);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1,
+  h2,
+  h3 {
+    font-family: "Young Serif", serif;
+    font-weight: lighter;
+  }
+  h1,
+  h2 {
+    margin: 20px;
+    margin-left: 0;
+  }
+  h2 {
+    color: var(--nutmeg);
+  }
+}
+
+.content-wrapper {
+  background-color: var(--white);
+  width: 650px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.7;
+}
+
+figure {
+  margin: 0;
+  margin-top: 10px;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+header {
+  width: 100%;
+}
+
+.caption {
+  background-color: var(--rose-white);
+  padding: 5px;
+  header {
+    margin-left: 20px;
+    color: var(--dark-raspberry);
+  }
+}
+
+li::marker {
+  color: var(--dark-raspberry);
+}
+
+li {
+  padding-left: 8px;
+}
+
+hr {
+  border: 1px solid var(--dark-charcoal);
+  opacity: 0.2;
+}
+
+.instructions li {
+  padding-bottom: 5px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  td {
+    font-weight: bold;
+    color: var(--dark-raspberry);
+  }
+  th {
+    font-weight: lighter;
+  }
+  tr:nth-child(1),
+  tr:nth-child(2),
+  tr:nth-child(3) {
+    border-bottom: 1px solid var(--dark-charcoal);
+  }
+}
+
+footer {
+  display: none;
+}
